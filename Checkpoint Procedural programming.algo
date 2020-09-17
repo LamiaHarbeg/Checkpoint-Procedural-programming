@@ -1,0 +1,30 @@
+ PROCEDURE dot_product(var ps: INTEGER, var A: ARRAY_OF INTEGER)
+ VAR
+   i,j : INTEGER;
+   A : ARRAY_OF INTEGER[2][3];
+ BEGIN
+     FOR i FROM 0 TO 1 DO
+    FOR j FROM 0 TO 2 DO
+      Read(A[i][j]);
+       ps := ps + A[i][j] ;
+        END_FOR
+         END_FOR
+ END
+ 
+
+
+ALGORITHM Checkpoint_Procedural_programming
+
+ VAR
+   a,N : INTEGER;
+     BEGIN
+     Write('Enter number of pairs of vectors')
+     Read(N):
+     FOR a FROM 0 TO N DO
+      dot_product(ps,A);
+      IF (ps = 0) THEN
+          Write ('The two vectors are orthogonal')
+      END_IF
+             END_FOR
+     END
+
